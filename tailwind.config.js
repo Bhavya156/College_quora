@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "white-landing": `url(${"/src/User/Images/happyKids.jpg"})`,
-       
+      }),
+      backgroundImage: (theme) => ({
+        "black-landing": `url(${"/src/User/Images/humanstruggle.jpg"})`,
       }),
     },
   plugins: [],

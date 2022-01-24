@@ -6,7 +6,7 @@ export default function Login() {
     <div>
       <Navbar />
       <div
-        className="bg-white-landing
+        className="bg-black-landing
                       w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
 
         <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">

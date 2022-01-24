@@ -5,11 +5,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Login from './User/Pages/Login';
+import SignUp from './User/Pages/SignUp';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login/>} />
+      <Route path="/SignUp" element={<SignUp/>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
