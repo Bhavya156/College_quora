@@ -1,17 +1,20 @@
 import React from "react";
-import { IoIosBug } from 'react-icons/io';
+import { BsFillInboxesFill } from "react-icons/bs";
 
 export default function NavbarHz() {
   return (
     <div className=" sticky top-0 ">
-      <nav class="bg-gray-900 ">
-       
-          <div className="flex">
-            <div className="flex space-x-4 text-white text-6xl ml-10">
-              <IoIosBug size="70"/>CollegeQuora
+      <nav class="bg-yellow-600">
+        <div className="flex items-center">
+          <div className="ml-5">
+            <BsFillInboxesFill size="55" color="white" />
+          </div>
+          <div className=" text-white text-5xl ml-1 py-2">
+            <div className="px-2">Pandora
+            <div className="relative text-xl translate-x-10 inline">Ask</div>
             </div>
           </div>
-        
+        </div>
       </nav>
     </div>
   );
