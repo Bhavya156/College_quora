@@ -1,9 +1,11 @@
 import React from "react";
 import { BsFillInboxesFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Login from "../../User/Pages/Login.js";
-import Ask from "../../User/Pages/Ask.js";
+import { Link } from "react-router-dom";
+import { SiAskubuntu } from "react-icons/si";
+import {GiBookCover} from "react-icons/gi"
+import {RiCalendarEventFill} from "react-icons/ri";
+import {RiChatFollowUpFill} from "react-icons/ri";
 
 export default function NavbarHz() {
   return (
@@ -20,45 +22,53 @@ export default function NavbarHz() {
           <Link to="/signup">
             <div
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
-                    px-3 py-2 rounded-md text-medium font-nunito "
+                    px-3 py-2 rounded-md text-medium  font-nunito "
             >
-              
               <div className="navbar-icon group">
-   Ask
-
-    <span class="navbar-tooltip group-hover:scale-100">Ask</span>
-  </div>
+                <SiAskubuntu size={"30"}/>
+                <span class="navbar-tooltip group-hover:scale-100">Ask</span>
+              </div>
             </div>
           </Link>
           <Link to="/test">
-          <div
-            class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
+            <div
+              class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
-          >
-            Test
-          </div>
+            >
+              <div className="navbar-icon group">
+              <GiBookCover size={"35"}/>
+                <span class="navbar-tooltip group-hover:scale-100">Test</span>
+              </div>
+            </div>
           </Link>
           <Link to="/events">
-          <div
-            class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
-                    px-3 py-2 rounded-md text-medium  font-nunito"
-          >
-            Events
-          </div>
+            <div
+              class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
+                    px-3 py-2 rounded-md text-medium  font-nunito "
+            >
+              <div className="navbar-icon group">
+              <RiCalendarEventFill size={"35"}/>
+                <span class="navbar-tooltip group-hover:scale-100">Events</span>
+              </div>
+            </div>
           </Link>
           <Link to="/following">
-          <div
-            class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
+            <div
+              class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
-          >
-            Following
-          </div>
+            >
+              <div className="navbar-icon group">
+              <RiChatFollowUpFill size={"35"}/>
+                <span class="navbar-tooltip group-hover:scale-100">
+                  Following
+                </span>
+              </div>
+            </div>
           </Link>
         </nav>
         <button class="inline-flex items-center bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-base mt-4 md:mt-0 text-indigo-500 text-medium font-nunito">
-
           <svg fill="none" stroke-width="2" class="w-8 h-8 ml-1">
-            <CgProfile size="30" />
+            <CgProfile size="33" />
           </svg>
         </button>
       </div>

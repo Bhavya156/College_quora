@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarHz from "../../Shared/Navbar/NavbarHz";
+
 
 
 export default function Login() {
@@ -10,7 +10,7 @@ export default function Login() {
                       w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
 
         <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">
-          <h2 class="text-3x1 font-bold mb-4 text-purple-800">Login</h2>
+          <h2 class="text-3xl text-center font-bold mb-4 text-indigo-500">Login</h2>
           <form class="space-y-4">
             <div>
               <label class="block mb-1 font-bold text-gray-500">Email</label>
@@ -28,7 +28,7 @@ export default function Login() {
               ></input>
             </div>
 
-            <button class="block w-full bg-red-600 p-4 rounded text-gray-100 hover:bg-red-500 hover:text-gray-300 transition duration-300">
+            <button class="block w-full bg-yellow-300 p-4 rounded text-indigo-500 hover:bg-yellow-500 hover:text-white font-bold transition duration-300">
               Login
             </button>
           </form>
