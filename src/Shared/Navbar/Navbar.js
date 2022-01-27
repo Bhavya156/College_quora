@@ -12,7 +12,7 @@ const Navbar = () => {
                         flex flex-col 
                         bg-gray-900 text-gray-100"
       >
-        <NavbarIcon icon={<FaFire size="28" />} />
+        <NavbarIcon icon={<FaFire size="28" />} text="Fire" />
         <NavbarIcon icon={<BsPlus size="32" />} />
         <NavbarIcon icon={<BsFillLightningFill size="20" />} />
         <NavbarIcon icon={<FaPoo size="20" />} />
@@ -22,7 +22,7 @@ const Navbar = () => {
   );
 };
 
-const NavbarIcon = ({ icon, text = "emshaa" }) => (
+const NavbarIcon = ({ icon, text}) => (
   <div className="navbar-icon group">
     {icon}
 

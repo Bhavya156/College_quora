@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Login from './User/Pages/Login';
-import SignUp from './User/Pages/SignUp.js';
+import reportWebVitals from "./reportWebVitals";
+import Login from "./User/Pages/Login";
+import SignUp from "./User/Pages/SignUp.js";
+import Ask from './User/Pages/Ask';
+import Events from './User/Pages/Events';
+import Following from './User/Pages/Following';
+import Test from './User/Pages/Test';
+import NavbarHz from './Shared/Navbar/NavbarHz';
 
 ReactDOM.render(
   <BrowserRouter>
+  <NavbarHz/>
     <Routes>
-      <Route path="/" element={<Login/>} />
-      <Route path="/signup" element={<SignUp/>} />
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/ask" element={<Ask />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="/following" element={<Following />} />
+      <Route path="/test" element={<Test />} />
+
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

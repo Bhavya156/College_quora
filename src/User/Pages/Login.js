@@ -1,12 +1,12 @@
 import React from "react";
 import NavbarHz from "../../Shared/Navbar/NavbarHz";
 
+
 export default function Login() {
   return (
     <div>
-      <NavbarHz/>
       <div
-        className="bg-white-landing
+        className="bg-login
                       w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
 
         <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">
