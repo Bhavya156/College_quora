@@ -11,10 +11,7 @@ import Following from './User/Pages/Following';
 import Test from './User/Pages/Test';
 import NavbarHz from './Shared/Navbar/NavbarHz';
 
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Login from './User/Pages/Login';
-import SignUp from './User/Pages/SignUp';
+
 
 
 ReactDOM.render(
