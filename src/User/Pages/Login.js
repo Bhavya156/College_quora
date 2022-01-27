@@ -6,11 +6,19 @@ export default function Login() {
   return (
     <div>
       <div
+
         className="bg-login
                       w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
 
         <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">
           <h2 class="text-3xl text-center font-bold mb-4 text-indigo-500">Login</h2>
+
+        className="bg-black-landing
+                      w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
+
+        <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">
+          <h2 class="text-xl font-bold mb-4 text-purple-800">Login</h2>
+
           <form class="space-y-4">
             <div>
               <label class="block mb-1 font-bold text-gray-500">Email</label>

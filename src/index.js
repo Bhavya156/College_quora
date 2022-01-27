@@ -11,6 +11,12 @@ import Following from './User/Pages/Following';
 import Test from './User/Pages/Test';
 import NavbarHz from './Shared/Navbar/NavbarHz';
 
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import Login from './User/Pages/Login';
+import SignUp from './User/Pages/SignUp';
+
+
 ReactDOM.render(
   <BrowserRouter>
   <NavbarHz/>
@@ -21,6 +27,8 @@ ReactDOM.render(
       <Route path="/events" element={<Events />} />
       <Route path="/following" element={<Following />} />
       <Route path="/test" element={<Test />} />
+      <Route path="/" element={<Login/>} />
+      <Route path="/SignUp" element={<SignUp/>} />
 
     </Routes>
   </BrowserRouter>,
