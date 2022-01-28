@@ -1,74 +1,99 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export default function SignUp() {
   return (
     <div>
       <div
-        className="bg-black-landing
-                      w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
+        className="bg-login
+                      w-full bg-cover bg-no-repeat flex h-screen justify-center items-center"
+      >
+        <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-96 overflow-hidden">
+          <div class="md:flex w-full">
+            <div class="w-full py-10 px-5 md:px-10">
+              <div class="text-center mb-10">
+                <h1 class="font-bold text-3xl text-gray-900">REGISTER</h1>
+                <p>Enter your information to register</p>
+              </div>
+              <div>
+                <div class="flex -mx-3">
+                  <div class="w-1/2 px-3 mb-5">
+                    <label for="" class="text-xs font-semibold px-1">
+                      Name
+                    </label>
+                    <div class="flex">
+                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      ></input>
+                    </div>
+                  </div>
+                  <div class="w-1/2 px-3 mb-5">
+                    <label for="" class="text-xs font-semibold px-1">
+                      Last name
+                    </label>
+                    <div class="flex">
+                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex -mx-3">
+                  <div class="w-full px-3 mb-5">
+                    <label for="" class="text-xs font-semibold px-1">
+                      Email
+                    </label>
+                    <div class="flex">
+                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i class="mdi mdi-email-outline text-gray-400 text-lg"></i>
+                      </div>
+                      <input
+                        type="email"
+                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex -mx-3">
+                  <div class="w-full px-3 mb-12">
+                    <label for="" class="text-xs font-semibold px-1">
+                      Password
+                    </label>
+                    <div class="flex">
+                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i class="mdi mdi-lock-outline text-gray-400 text-lg"></i>
+                      </div>
+                      <input
+                        type="password"
+                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex -mx-3">
+                  <div class="w-full px-3 mb-5">
+                    <button class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
+                      REGISTER NOW
+                    </button>
+                  </div>
+                </div>
 
-        <div class="bg-white p-9 rounded shadow-2x1 w-80 m-0 flex-col">
-          <div class="text-xl font-bold mb-4 text-gray-900">Create your Account</div>
-          <form class="space-y-4">
-
-          <div>
-              <label class="block mb-1 font-bold text-gray-500">Name</label>
-              <input
-                type="name"
-                class="w-full border-2 border-gray-400 p-1 rounded outline-none focus:border-blue-400"
-              ></input>
+                <div className="italic text-blue-600 hover:text-blue-800 visited:text-purple-600">
+                  <Link to = "/">Already have an Account? Login here!</Link>
+                </div>
+              </div>
             </div>
-
-            <div>
-              <label class="block mb-1 font-bold text-gray-500">Enrollment Number</label>
-              <input
-                type="text"
-                class="w-full border-2 border-gray-400 p-1 rounded outline-none focus:border-blue-400"
-              ></input>
-            </div>
-
-            <div>
-              <label class="block mb-1 font-bold text-gray-500">Email</label>
-              <input
-                type="email"
-                class="w-full border-2 border-gray-400 p-1 rounded outline-none focus:border-blue-400"
-              ></input>
-            </div>
-
-            <div>
-              <label class="block mb-1 font-bold text-gray-500">Password</label>
-              <input
-                type="password"
-                class="w-full border-2 border-gray-400 p-1 rounded outline-none focus:border-blue-400"
-              ></input>
-            </div>
-            
-            <div>
-            <label class="block mb-1 font-bold text-gray-500">Institute</label>
-            
-            <select class="w-full border-2 border-gray-400 p-1 rounded outline-none focus:border-blue-400">
-                    
-                    <option value="CSPIT">DEPSTAR</option>
-                    <option value="DEPSTAR">CSPIT</option>
-                    <option value="RPCP">RPCP</option>
-                    <option value="IIIM">IIIM</option>
-                    <option value="PDPIAS">PDPIAS</option>
-                    <option value="CIN">CIN</option>
-            </select>
-            
           </div>
-          <div className="italic underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
-            <a href="#">Already have an account?</a>
-          </div>
-
-
-            <button class="block w-full bg-yellow-400 p-4 rounded text-gray-900 hover:bg-yellow-500 hover:text-gray-100 transition duration-300">
-            Sign Up
-            </button>
-          </form>
         </div>
       </div>
     </div>
   );
 }
-

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 
 
@@ -7,10 +8,10 @@ export default function Login() {
     <div>
       <div
         className="bg-login
-                      w-full bg-cover bg-no-repeat flex h-screen justify-center items-center">
+                      w-full bg-cover bg-no-repeat flex h-screen justify-center items-center ">
 
-        <div class="bg-white p-8 rounded shadow-2x1 w-80 m-0 flex-col">
-          <h2 class="text-3xl text-center font-bold mb-4 text-indigo-500">Login</h2>
+                      <div class="bg-gray-100 p-8 rounded-3xl shadow-x1 w-80 m-0 flex-col">
+                      <h2 class="text-3xl text-center font-bold mb-4 text-indigo-500">Login</h2>
           <form class="space-y-4">
             <div>
               <label class="block mb-1 font-bold text-gray-500">Email</label>
@@ -31,6 +32,9 @@ export default function Login() {
             <button class="block w-full bg-yellow-300 p-4 rounded text-indigo-500 hover:bg-yellow-500 hover:text-white font-bold transition duration-300">
               Login
             </button>
+            <div className="italic text-blue-600 hover:text-blue-800 visited:text-purple-600">
+            <Link to = "/signup">Don't have an Account? SignUp here!</Link>
+          </div>
           </form>
         </div>
       </div>
