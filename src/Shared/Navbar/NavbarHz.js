@@ -19,7 +19,7 @@ export default function NavbarHz() {
           </span>
         </div>
         <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center nunito">
-          <Link to="/signup">
+          <Link to="/ask">
             <div
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
