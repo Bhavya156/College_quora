@@ -66,11 +66,14 @@ export default function NavbarHz() {
             </div>
           </Link>
         </nav>
+        <div className="navbar-icon group">
         <button class="inline-flex items-center bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-base mt-4 md:mt-0 text-indigo-500 text-medium font-nunito">
-          <svg fill="none" stroke-width="2" class="w-8 h-8 ml-1">
             <CgProfile size="33" />
-          </svg>
+            <span class="navbar-tooltip group-hover:scale-100">
+            Profile
+          </span>
         </button>
+        </div>
       </div>
     </header>
   );
