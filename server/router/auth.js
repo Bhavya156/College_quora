@@ -2,6 +2,8 @@
 
 const express = require("express"); // acquired express
 const router = express.Router(); // acquired express router
+const bcrypt = require("bcryptjs"); //acquired bcrypt
+const jwt = require("jsonwebtoken"); // acquired jwt
 
 require("../database/connect"); //connected database
 const userSchema = require("../models/userSchema"); // acquired user schema
@@ -57,10 +59,18 @@ router.post("/login", async (req, res) => {
     }
 
     const userExists = await userSchema.findOne({ email: email }); //find if user exists
-    if (!userExists) {
-      res.status(400).json({ error: "User does not exist" });
+
+    if (userExists) {
+      const isMatch = await bcrypt.compare(password, userExists.password); //compare entered password against account password
+      const token = await userExists.generateAuthToken(); //generate json web token for authentication
+    
+      if (isMatch) {
+        res.status(200).json({ message: "User login successful" });
+      } else {
+        res.status(400).json({ error: "Invalid Credentials" });
+      }
     } else {
-      res.status(200).json({ message: "User login successful" });
+      res.status(400).json({ error: "Invalid Credentials" });
     }
   } catch (err) {
     console.log(err);
