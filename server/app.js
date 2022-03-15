@@ -1,28 +1,29 @@
-const dotenv = require("dotenv");
-const express = require('express');
-const mongoose = require('mongoose');
-const app = express();
+//-FILE DESCRIPTION: Main server file
 
-dotenv.config({path: './config.env'});
-require('./database/connect');
+const dotenv = require("dotenv"); //acquired dotenv
+const express = require("express"); // acquired express
+const app = express(); //configured app to use express
 
-const PORT = process.env.PORT;
+dotenv.config({ path: "./config.env" }); //used dotenv to get environment variables
 
-const middleware = (req,res,next) => {
-    console.log('middleware running');
-    next();
-}
+require("./database/connect"); //acquired database connection from connect
+app.use(express.json());  //convert .json object to string
+app.use(require("./router/auth")); //configured router
+
+const PORT = process.env.PORT; //default port for backend
+
+const middleware = (req, res, next) => {
+  console.log("middleware running");
+  next();
+}; // started middleware
 
 
-app.get('/signup',(req, res, next) => {
-    res.send('Hello World from server');
-})
-app.get('/backend2',middleware,(req, res,next) => {
-    console.log('backend2 running');
-    res.send('Hello World from backend');
-   
-})
+app.get("/backend2", middleware, (req, res, next) => {
+  console.log("backend2 running");
+  res.send("Hello World from backend");
+});//backend2 route
 
-app.listen(PORT,()=>{
-    console.log('server running');
-})
+app.listen(PORT, () => {
+  console.log("server running");
+});//server listening on PORT
+
