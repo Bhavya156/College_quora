@@ -9,7 +9,7 @@ import {RiChatFollowUpFill} from "react-icons/ri";
 
 export default function NavbarHz() {
   return (
-    <header class="body-font bg-yellow-300 sticky top-0">
+    <header class="body-font bg-yellow-300 sticky top-0 z-40">
       <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
         <div class="flex title-font font-medium items-center text-indigo-500 mb-4 md:mb-0">
           <BsFillInboxesFill size="30" color="rgb(99 102 241)" />

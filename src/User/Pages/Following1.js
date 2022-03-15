@@ -1,11 +1,11 @@
 import React from 'react';
-import Avatar from 'D:/Studies/Github/Pandora/node_modules/@mui/material/Avatar';
+import { Avatar } from '@mui/material';
 
 function Following1({ username, caption, imageUrl}) {
   return <div className="post">
   <div class="max-w-xl bg-white border border-gray-200 mr-5 mb-11 shadow-md">
     <div class="flex items-center px-5">
-      <Avatar 
+      <Avatar
         class="px-2"
         alt="Bhavya"
         src="/static/images/avatar/1.jpg">
