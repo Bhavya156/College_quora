@@ -1,6 +1,5 @@
 import React , { useState } from 'react';
 import { Avatar } from '@mui/material';
-import Upvote from './Upvote';
 
 function Following1({ username, caption, imageUrl}) {
   const [comments, setComments] = useState([]);
@@ -10,14 +9,16 @@ function Following1({ username, caption, imageUrl}) {
 
   }
   return <div>
-  <div class="sticky top-0 max-w-xl bg-white border border-gray-200 mr-5 mb-11 shadow-md">
-    <div class="flex items-center px-5">
+  <div class="max-w-xl bg-white border border-gray-200 mr-5 mb-11 shadow-md">
+  <div class="flex items-center px-5 pt-2 pb-2 ">
       <Avatar
-        class="px-2"
+      class="px"
         alt="Bhavya"
         src="/static/images/avatar/1.jpg">
         </Avatar>
-        <h3> {username} </h3>
+        <div class="pl-2">
+            <h3> {username} </h3>
+          </div>
     </div>
     
     {/* header*/}
@@ -25,8 +26,7 @@ function Following1({ username, caption, imageUrl}) {
     <img class="w-full object-contain border-t-gray-700 border-b-gray-700" src= { imageUrl } alt=""></img>
     {/* image */}
       <h4 class="font-normal p-5"><strong> {username} </strong> {caption} </h4>
-      
-      <Upvote />
+    
       {/*Comment Section database connection*/}
       <div class="p-5">
         {comments.map((comment) => (
@@ -45,7 +45,7 @@ function Following1({ username, caption, imageUrl}) {
           onChange={(e) => setComment(e.target.value)} />
 
           <button
-            class="flex-initial border-none border-t-gray-300 bg-transparent text-sky-600"
+            class="flex-initial border-none border-t-gray-300 bg-transparent text-sky-600 pr-2.5"
             disabled={!comment}
             type="submit"
             onClick={postComment} 
