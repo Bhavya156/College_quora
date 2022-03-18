@@ -1,13 +1,20 @@
 import React , { useState } from 'react';
 import { Avatar } from '@mui/material';
+import { FaRegThumbsUp, FaRegThumbsDown} from 'react-icons/fa';
+import {IconButton } from '@mui/material';
 
-function Following1({ username, caption, imageUrl}) {
+function Following1({ username, caption, imageUrl, id}) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState('');
-  {/* database function for comments*/}
+  {/* database function for comments */}
   const postComment = (event) => {
 
   }
+  {/* Upvote */}
+
+  const [Like, setLike] = useState(0);
+  const [Dislike, setDislike] = useState(0);     
+
   return <div>
   <div class="max-w-xl bg-white border border-gray-200 mr-5 mb-11 shadow-md">
   <div class="flex items-center px-5 pt-2 pb-2 ">
@@ -24,9 +31,29 @@ function Following1({ username, caption, imageUrl}) {
     {/* header*/}
 
     <img class="w-full object-contain border-t-gray-700 border-b-gray-700" src= { imageUrl } alt=""></img>
+    <div class="hidden">{id}</div>
     {/* image */}
+
+    { /*Upvote Button */}
+    <div>
+    <IconButton id={id}
+        class="px-5 pt-2.5"
+        onClick = {() => setLike(Like + 1)}>
+        {Like}
+        <FaRegThumbsUp size={"25"}/> 
+        </IconButton>
+
+        <IconButton id={id}
+        class="px-2.5 pt-2.5"
+        onClick = {() => setDislike(Dislike + 1)}>
+        {Dislike}
+        <FaRegThumbsDown size={"25"}/>
+        </IconButton>
+    </div>
+
       <h4 class="font-normal p-5"><strong> {username} </strong> {caption} </h4>
-    
+      { /*caption */}
+
       {/*Comment Section database connection*/}
       <div class="p-5">
         {comments.map((comment) => (
