@@ -1,4 +1,4 @@
-//-FILE DESCRIPTION: Used to create a new user
+//*FILE DESCRIPTION: Used to create a new user
 
 const express = require("express"); // acquired express
 const router = express.Router(); // acquired express router
@@ -63,7 +63,11 @@ router.post("/login", async (req, res) => {
     if (userExists) {
       const isMatch = await bcrypt.compare(password, userExists.password); //compare entered password against account password
       const token = await userExists.generateAuthToken(); //generate json web token for authentication
-    
+      res.cookie("jwtoken", token, {
+        expires: new Date(Date.now() + 25892000000),
+        httpOnly: true
+      });
+
       if (isMatch) {
         res.status(200).json({ message: "User login successful" });
       } else {
