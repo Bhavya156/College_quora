@@ -5,7 +5,7 @@ function Following() {
       
   
   return (
-    <div class="grid place-content-center bg-orange-100">
+    <div class="grid place-content-center bg-orange-100 pt-5">
       
         <Following1
           id= "1"
