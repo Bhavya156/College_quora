@@ -12,13 +12,10 @@ app.use(require("./router/auth")); //configured router
 
 const PORT = process.env.PORT; //default port for backend
 
-const middleware = (req, res, next) => {
-  console.log("middleware running");
-  next();
-}; // started middleware
 
 
-app.get("/backend2", middleware, (req, res, next) => {
+
+app.get("/backend2", (req, res, next) => {
   console.log("backend2 running");
   res.send("Hello World from backend");
 });//backend2 route

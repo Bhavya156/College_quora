@@ -24,7 +24,7 @@ export default function NavbarHz() {
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
             >
-              <div className="navbar-icon group">
+              <div class="navbar-icon group">
                 <SiAskubuntu size={"30"}/>
                 <span class="navbar-tooltip group-hover:scale-100">Ask</span>
               </div>
@@ -35,7 +35,7 @@ export default function NavbarHz() {
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
             >
-              <div className="navbar-icon group">
+              <div class="navbar-icon group">
               <GiBookCover size={"35"}/>
                 <span class="navbar-tooltip group-hover:scale-100">Test</span>
               </div>
@@ -46,7 +46,7 @@ export default function NavbarHz() {
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
             >
-              <div className="navbar-icon group">
+              <div class="navbar-icon group">
               <RiCalendarEventFill size={"35"}/>
                 <span class="navbar-tooltip group-hover:scale-100">Events</span>
               </div>
@@ -57,7 +57,7 @@ export default function NavbarHz() {
               class="mr-5 text-indigo-500 hover:bg-yellow-500 hover:text-white
                     px-3 py-2 rounded-md text-medium  font-nunito "
             >
-              <div className="navbar-icon group">
+              <div class="navbar-icon group">
               <RiChatFollowUpFill size={"35"}/>
                 <span class="navbar-tooltip group-hover:scale-100">
                   Following
@@ -66,7 +66,7 @@ export default function NavbarHz() {
             </div>
           </Link>
         </nav>
-        <div className="navbar-icon group">
+        <div class="navbar-icon group">
         <button class="inline-flex items-center bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-base mt-4 md:mt-0 text-indigo-500 text-medium font-nunito">
             <CgProfile size="33" />
             <span class="navbar-tooltip group-hover:scale-100">

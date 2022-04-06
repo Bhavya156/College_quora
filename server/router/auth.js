@@ -4,6 +4,7 @@ const express = require("express"); // acquired express
 const router = express.Router(); // acquired express router
 const bcrypt = require("bcryptjs"); //acquired bcrypt
 const jwt = require("jsonwebtoken"); // acquired jwt
+const authenticate = require("../middleware/authenticate");
 
 require("../database/connect"); //connected database
 const userSchema = require("../models/userSchema"); // acquired user schema
@@ -65,7 +66,7 @@ router.post("/login", async (req, res) => {
       const token = await userExists.generateAuthToken(); //generate json web token for authentication
       res.cookie("jwtoken", token, {
         expires: new Date(Date.now() + 25892000000),
-        httpOnly: true
+        httpOnly: true,
       });
 
       if (isMatch) {
@@ -79,5 +80,10 @@ router.post("/login", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
+});
+
+router.get("/backend2", authenticate, (req, res) => {
+  console.log("backend2 running");
+  res.send("Hello World from backend");
 });
 module.exports = router;
