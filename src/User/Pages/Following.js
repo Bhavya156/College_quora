@@ -1,6 +1,6 @@
 import React from "react";
 import Following1 from "./Following1";
-import '../Images/q1.jpg';
+
 
 function Following() {
       
