@@ -66,7 +66,7 @@ export default function App() {
         p-20
         shadow-lg
         flex
-        justify-evenly"
+        justify-evenly text-indigo-700"
     >
       {showScore ? (
         <div
@@ -82,10 +82,10 @@ export default function App() {
             class=" w-full
             relative"
           >
-            <div class="text-2xl">
+            <div class="text-2xl text-indigo-700">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
-            <div class="text-2xl w-full">
+            <div class="text-2xl w-full text-indigo-700">
               {questions[currentQuestion].questionText}
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function App() {
           flex-col
           justify-between ">
             {questions[currentQuestion].answerOptions.map((answerOption) => (
-              <button class="w-full text-xl text-black rounded-2xl border-blue-900 flex justify-start items-center border-4 p-5 m-2 cursor-pointer hover:bg-blue-300"
+              <button class="w-full text-xl text-indigo-700 rounded-2xl border-blue-900 flex justify-start items-center border-4 p-5 m-2 cursor-pointer hover:bg-blue-300"
                 onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
               >
                 {answerOption.answerText}
