@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { CarouselData } from "./CarouselData";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import Swipe from "react-easy-swipe";
+import  Swipe from 'react-easy-swipe';
 
 const captionStyle = {
   fontSize: '2em',
@@ -52,8 +52,8 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="mt-8 flex justify-center">
-        <div className="h-2/4 w-2/4 overflow-y-hidden relative">
+      <div class="mt-8 flex justify-center">
+        <div class="h-2/4 w-2/4 overflow-y-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
             className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
@@ -66,7 +66,7 @@ class Carousel extends Component {
                   src={slide.image}
                   alt="This is a carousel slide"
                   key={index}
-                  className={
+                  class={
                     index === this.state.currentSlide
                       ? "block w-full object-cover"
                       : "hidden"
@@ -82,11 +82,11 @@ class Carousel extends Component {
             })}
           </Swipe>
 
-          <div className="absolute w-full flex justify-center bottom-0">
+          <div class="absolute w-full flex justify-center bottom-0">
             {CarouselData.map((element, index) => {
               return (
                 <div
-                  className={
+                  class={
                     index === this.state.currentSlide
                       ? "h-2 w-2 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
                       : "h-2 w-2 bg-white rounded-full mx-2 mb-2 cursor-pointer"

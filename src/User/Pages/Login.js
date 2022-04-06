@@ -28,7 +28,7 @@ export default function Login() {
   return (
     <div>
       <div
-        className="bg-login
+        class="bg-login
                       w-full bg-cover bg-no-repeat flex h-screen justify-center items-center "
       >
         <div class="bg-gray-100 p-8 rounded-3xl shadow-x1 w-80 m-0 flex-col">
@@ -64,7 +64,7 @@ export default function Login() {
             >
               Login
             </button>
-            <div className="italic text-blue-600 hover:text-blue-800 visited:text-purple-600">
+            <div class="italic text-blue-600 hover:text-blue-800 visited:text-purple-600">
               <Link to="/signup">Don't have an Account? SignUp here!</Link>
             </div>
           </form>

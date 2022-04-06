@@ -58,7 +58,7 @@ export default function SignUp() {
   return (
     <div>
       <div
-        className="bg-login
+        class="bg-login
                       w-full  h-screen bg-cover bg-no-repeat flex  justify-center items-center"
       >
         <form method="POST">
@@ -155,7 +155,7 @@ export default function SignUp() {
                     </div>
                   </div>
 
-                  <div className="italic text-blue-600 hover:text-blue-800">
+                  <div class="italic text-blue-600 hover:text-blue-800">
                     <Link to="/">Already have an Account? Login here!</Link>
                   </div>
                 </div>
