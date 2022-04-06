@@ -3,6 +3,12 @@ import { CarouselData } from "./CarouselData";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 
+const captionStyle = {
+  fontSize: '2em',
+  fontWeight: 'bold',
+}
+
+
 class Carousel extends Component {
   constructor(props) {
     super(props);

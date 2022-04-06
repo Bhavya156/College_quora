@@ -1,5 +1,6 @@
 import React from "react";
 import Following1 from "./Following1";
+import '../Images/q1.jpg';
 
 function Following() {
       
@@ -10,8 +11,8 @@ function Following() {
         <Following1
           id= "1"
           username="Bhavya"
-          caption="Welcome to Pandora"
-          imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMzg-53qIbQcn7PuqLtnA9jWHpNVBxEmeag&usqp=CAU"
+          caption="What is Cascading Rollback? Explain using this example."
+          imageUrl="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Cascading-Schedule-Cascading-Rollback-Cascading-Abort-1.png"
           
           />
           
@@ -19,16 +20,16 @@ function Following() {
         <Following1
           id="2"
           username="Shreyans"
-          caption="Dope"
-          imageUrl="https://media.istockphoto.com/photos/samoyed-dog-picture-id181956647?b=1&k=20&m=181956647&s=170667a&w=0&h=XQcaTuaNeJJDHgG1XWsJ8bOrF2L42kqnhjgw7q1_V90="
+          caption="What is Binary Search Tree? Explain using this example."
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1200px-Binary_search_tree.svg.png"
         />
         
     
         <Following1
           id="3"
           username="Esha"
-          caption="That was fun"
-          imageUrl="https://s36700.pcdn.co/wp-content/uploads/2019/11/Golden-Puppy_getty82781924-399x600.png"
+          caption="What is Deadlock? Is there any conflict serializability in the above problem?"
+          imageUrl="https://media.geeksforgeeks.org/wp-content/cdn-uploads/deadlock.png"
         />
         
     </div>
