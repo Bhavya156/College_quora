@@ -1,7 +1,11 @@
-import React from "react";
+
+import React, {useState} from "react";
+
 
 function Ask() {
+  let [images,setimages] = useState([]);
   return (
+    
     <div class="bg-orange-100 h-screen grid">
       <div class="flex flex-col max-w-5xl md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-36 mx-96">
         <div class="md:flex items-center justify-center md:w-1/2 md:bg-yellow-300">
@@ -18,14 +22,23 @@ function Ask() {
           <form>
             <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
               <input
-                class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
+                class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100 w-full"
                 type="text"
                 name="email"
                 placeholder="Type out the question"
               />
-              <button class="py-3 px-4 bg-yellow-300 text-indigo-500 font-semibold uppercase hover:bg-gray-600">
+              
+              <button class="py-3 px-4 bg-yellow-300 text-indigo-500 font-semibold uppercase hover:bg-gray-600 ">
                 Post
               </button>
+              <input
+                class=""
+                type="file"
+                accept="image/*"
+                onChange={(e) => {
+                  setimages([...e.target.files]);
+                }}
+              ></input>
             </div>
           </form>
         </div>
