@@ -22,24 +22,26 @@ function Ask() {
           <form>
             <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
               <input
-                class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100 w-full"
+                class="pl-10 pr-3 py-2  bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100 w-full"
                 type="text"
                 name="email"
                 placeholder="Type out the question"
               />
-              
-              <button class="py-3 px-4 bg-yellow-300 text-indigo-500 font-semibold uppercase hover:bg-gray-600 ">
+              </div>
+              <div>
+              <button class="mt-4 pr-3 py-3 px-4 bg-yellow-300 text-indigo-500 font-semibold uppercase hover:bg-gray-600 ">
                 Post
               </button>
               <input
-                class=""
+                class="mt-4 pl-3 py-3 px-4 "
                 type="file"
                 accept="image/*"
                 onChange={(e) => {
                   setimages([...e.target.files]);
                 }}
               ></input>
-            </div>
+              </div>
+            
           </form>
         </div>
       </div>

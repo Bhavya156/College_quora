@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillInboxesFill } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
+import { FiPower } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { SiAskubuntu } from "react-icons/si";
 import {GiBookCover} from "react-icons/gi"
@@ -68,9 +68,9 @@ export default function NavbarHz() {
         </nav>
         <div class="navbar-icon group">
         <button class="inline-flex items-center bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-base mt-4 md:mt-0 text-indigo-500 text-medium font-nunito">
-            <CgProfile size="33" />
+            <FiPower size="30" />
             <span class="navbar-tooltip group-hover:scale-100">
-            Profile
+            Logout
           </span>
         </button>
         </div>
