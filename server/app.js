@@ -9,7 +9,7 @@ dotenv.config({ path: "./config.env" }); //used dotenv to get environment variab
 require("./database/connect"); //acquired database connection from connect
 app.use(express.json());  //convert .json object to string
 app.use(require("./router/auth")); //configured router
-
+app.use('./uploads', express.static('uploads')); 
 const PORT = process.env.PORT; //default port for backend
 
 
