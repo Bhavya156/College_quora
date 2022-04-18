@@ -126,7 +126,7 @@ class Carousel extends Component {
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Upcoming Events</div>
               <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                This is the Upcoming events corner. All the upcoming events will be displayed here. Links for registration of all the events will also be provided in the description below.
               </p>
             </div>
             </div>
@@ -138,7 +138,7 @@ class Carousel extends Component {
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Previous Events</div>
               <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                This is the Previous events corner. All the recent events organized by our university will be displayed here. Links for results of the events will be provided in the description below.
               </p>
             </div>
             </div>
