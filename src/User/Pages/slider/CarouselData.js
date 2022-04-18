@@ -1,23 +1,23 @@
 export const resources = [
     {
-      title: "Find me on Twitter",
+      title: "EVENT 1 !!",
       image: "https://image.shutterstock.com/image-vector/white-events-sign-over-confetti-260nw-300283754.jpg",
-      caption : "event 1",
+      caption : "DJ Night at CHARUSAT",
     },
     {
-      title: "Welcome to Ark Labs",
+      title: "EVENT 2 !!",
       image: "https://media-exp1.licdn.com/dms/image/C561BAQE-51J-8KkMZg/company-background_10000/0/1548357920228?e=2147483647&v=beta&t=wrOVYN8qrGon9jILrMQv78FsyOV4IMQxr_3UjYtUREI",
-      caption : "event 2",
+      caption : "HACKATHON 2k22",
     },
     {
-      title: "Some sort of third title",
+      title: "EVENT 3 !!",
       image: "https://media.istockphoto.com/vectors/hackathon-background-hack-marathon-coding-event-glitch-poster-and-vector-id1125107251?k=20&m=1125107251&s=612x612&w=0&h=5h1Tz0kw7AnxbyfQkUyqYXI-GdjIJMaFe7K5FVGyfKg=",
-      caption : "event 3",
+      caption : "INDUSTRIAL VISIT TO ISRO",
     },
     {
-      title: "A personal site perhaps?",
+      title: "EVENT 4 !!",
       image: "https://dimr.edu.in/wp-content/uploads/2015/03/cpd13.jpg",
-      caption : "event 4",
+      caption : "COGNIZANCE 2k22",
     },
     {
       title: "Super item number five",
